@@ -1,0 +1,44 @@
+body{
+    background-color: aqua;
+}
+div{
+    font-size: x-large;
+    text-align: center;
+}
+div::after{
+    content: 'Welcome to the demo';
+}
+@media(max-width:400px){
+    body{
+        background-color: red;
+    }
+    div::after{
+        content: 'Welcome to the world';
+    }
+}
+@media(min-width: 401px) and (max-width: 767px){
+    body{
+        background-color: blue;
+    }
+    div::after{
+        content: 'Welcome to the jungle';
+    }
+}
+@media(min-width: 768px){
+/*if view port is atleast 768px then this style is applied */
+    body{
+        background-color: green;
+    }
+    div::after{
+        content: 'Welcome to my home';
+    }
+}
+@media(min-width: 900px){ 
+    /*if view port is atleast 900px then this style is applied */
+        body{
+            background-color: yellow;
+        }
+        div::after{
+            content: 'Hello i am Dinesh';
+        }
+    }
