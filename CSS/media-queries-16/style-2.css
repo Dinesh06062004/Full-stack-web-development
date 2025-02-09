@@ -1,0 +1,41 @@
+@media(max-width: 600px) {
+
+    /* this is for mobile phones */
+    body{
+        background-color: red;
+    }
+    div::after{
+        content: 'Mobile Phone';    
+    }
+}
+@media(min-width: 600px){
+    /* poratin tablet and big phone */
+    body{
+        background-color: green;
+    }
+    div::after{
+        content: 'Tablet and Big Phone';    
+    }
+}
+@media(min-width: 800px){
+    /* this is for small desktop */
+    body{
+        background-color: blue;
+    }
+    div::after{
+        content: 'Small Desktop';    
+    }
+}
+@media(min-width: 1000px){
+    /* this is for big desktop */
+    body{
+        background-color: yellow;
+    }
+    div::after{
+        content: 'Big Desktop';    
+    }
+}
+div{
+    text-align: center;
+    font-size: x-large;
+}
